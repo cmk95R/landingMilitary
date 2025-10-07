@@ -22,12 +22,12 @@ const sitiosDeInteres = [
   {
     nombre: "Dirección General de Bienestar",
     url: "https://www.bienestar.mil.ar/",
-    logo: "https://comisioningenieros.mil.ar/wp-content/uploads/2023/02/logo-2.png",
+    logo: "https://comisioningenieros.mil.ar/wp-content/uploads/2022/08/Logo-Front-Header.png",
   },
   {
-    nombre: "Contaduría General del Ejército",
+    nombre: "Escuela de SubOficiales Sargento Cabral",
     url: "https://www.cge.mil.ar/",
-    logo: "https://comisioningenieros.mil.ar/wp-content/uploads/2023/02/logo_cabezal_colorWhite-copy-1.png",
+    logo: "https://esesc.ejercito.mil.ar/assets/img/cabecera/logo%20esesc%20texto.webp",
   },
 ]; 
 

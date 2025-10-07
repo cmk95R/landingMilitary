@@ -20,18 +20,24 @@ export default function Header() {
       className="
         sticky top-0 z-50
         bg-black/95 backdrop-blur
-        border-l-[8px] border-l-yellow-500
+        border-l-[8px] border-l-[#9D7852]
         ring-1 ring-white/10
         shadow-[0_0_18px_rgba(255,255,255,0.08)]
       "
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top bar */}
-        <div className="flex items-center justify-between py-4">
-          <h1 className="text-2xl sm:text-3xl font-bold text-white">
-            Mi Organización
-          </h1>
-
+        <div className="flex items-center justify-between py-4 ">
+          <a href="#inicio" className="flex items-center gap-4">
+            <img
+              className="h-12 w-auto"
+              src="/01.png"
+              alt="Logo de la Comisión de Ingenieros"
+            />
+            <h5 className="text-xl sm:text-2xl text-white font-small">
+              Compañía de Reserva de Ingenieros
+            </h5>
+          </a>
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (

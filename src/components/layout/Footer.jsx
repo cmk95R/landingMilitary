@@ -18,27 +18,7 @@ export default function Footer() {
           "
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
-            <div>
-              <h5 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
-                Mi Organización
-              </h5>
-              <p className="text-sm sm:text-base text-white/70">
-                Comprometidos con la excelencia y el desarrollo profesional desde 2010.
-              </p>
-            </div>
-
-            <div>
-              <h5 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">
-                Enlaces Rápidos
-              </h5>
-              <ul className="space-y-2 text-sm sm:text-base text-white/70">
-                <li><a href="#inicio" className="hover:text-yellow-300 transition">Inicio</a></li>
-                <li><a href="#sobre-mi" className="hover:text-yellow-300 transition">Sobre Mí</a></li>
-                <li><a href="#informacion" className="hover:text-yellow-300 transition">Información</a></li>
-                <li><a href="#novedades" className="hover:text-yellow-300 transition">Novedades</a></li>
-                <li><a href="#eventos" className="hover:text-yellow-300 transition">Eventos</a></li>
-              </ul>
-            </div>
+           
 
             <div>
               <h5 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">
@@ -63,13 +43,7 @@ export default function Footer() {
                 >
                   <Facebook className="w-5 h-5 sm:w-6 sm:h-6 text-white/80 hover:text-yellow-300" />
                 </a>
-                <a
-                  href="#"
-                  aria-label="Twitter"
-                  className="p-2 rounded-md bg-white/5 ring-1 ring-white/10 transition hover:bg-white/10 hover:ring-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500/60"
-                >
-                  <Twitter className="w-5 h-5 sm:w-6 sm:h-6 text-white/80 hover:text-yellow-300" />
-                </a>
+                
                 <a
                   href="#"
                   aria-label="Instagram"
@@ -77,13 +51,7 @@ export default function Footer() {
                 >
                   <Instagram className="w-5 h-5 sm:w-6 sm:h-6 text-white/80 hover:text-yellow-300" />
                 </a>
-                <a
-                  href="#"
-                  aria-label="LinkedIn"
-                  className="p-2 rounded-md bg-white/5 ring-1 ring-white/10 transition hover:bg-white/10 hover:ring-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500/60"
-                >
-                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 text-white/80 hover:text-yellow-300" />
-                </a>
+                
               </div>
             </div>
           </div>
