@@ -10,9 +10,14 @@ const sitiosDeInteres = [
     logo: "https://comisioningenieros.mil.ar/wp-content/uploads/2022/08/escudo-cmn-1024x752.png",
   },
   {
+    nombre: "Escuela de SubOficiales Sargento Cabral",
+    url: "https://esesc.ejercito.mil.ar/",
+    logo: "https://esesc.ejercito.mil.ar/assets/img/cabecera/logo%20esesc%20texto.webp",
+  },
+  {
     nombre: "Instituto Universitario del Ejército",
-    url: "http://www.iue.edu.ar/",
-    logo: "https://comisioningenieros.mil.ar/wp-content/uploads/2022/08/57091fb55838677e3c71c69c33561ed8.jpg",
+    url: "https://undef.edu.ar/", // <-- corregí hhttps -> https
+    logo: "https://undef.edu.ar/wp-content/uploads/2025/06/LOGOS-10-19-19-19.png",
   },
   {
     nombre: "Fundación Soldados",
@@ -20,15 +25,11 @@ const sitiosDeInteres = [
     logo: "https://comisioningenieros.mil.ar/wp-content/uploads/2022/08/Fundacion-soldados.png",
   },
   {
-    nombre: "Dirección General de Bienestar",
-    url: "https://www.bienestar.mil.ar/",
+    nombre: "Comision de Ingenieros",
+    url: "https://comisioningenieros.mil.ar/",
     logo: "https://comisioningenieros.mil.ar/wp-content/uploads/2022/08/Logo-Front-Header.png",
+    smaller: true, // <-- marcar este como más chico
   },
-  {
-    nombre: "Escuela de SubOficiales Sargento Cabral",
-    url: "https://www.cge.mil.ar/",
-    logo: "https://esesc.ejercito.mil.ar/assets/img/cabecera/logo%20esesc%20texto.webp",
-  },
-]; 
+];
 
-export default sitiosDeInteres
+export default sitiosDeInteres;

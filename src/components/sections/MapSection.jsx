@@ -30,7 +30,7 @@ export default function MapSection() {
               "
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52564.09834425892!2d-58.4438462!3d-34.6037181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sar!4v1632847200000!5m2!1ses!2sar"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d88457.73394671983!2d-58.64087818308559!3d-34.519861138462424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbb8c4b604ac9%3A0x497da31cc6830ba3!2sCampo%20De%20Mayo!5e0!3m2!1ses-419!2sar!4v1759867351152!5m2!1ses-419!2sar" width="600" height="450"
                 className="w-full h-full"
                 style={{ border: 0 }}
                 allowFullScreen
@@ -48,7 +48,7 @@ export default function MapSection() {
                     Dirección
                   </h4>
                   <p className="text-sm sm:text-base text-white/70">
-                    Av. Corrientes 1234, Buenos Aires
+                    Campo de Mayo, Provincia de Buenos Aires
                   </p>
                   <p className="text-sm sm:text-base text-white/70">
                     Buenos Aires, Argentina C1043

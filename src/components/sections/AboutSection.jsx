@@ -12,7 +12,7 @@ export default function AboutSection() {
           </div>
           <div className="order-1 lg:order-2">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 sm:mb-6">
-              COMISIÓN DE INGENIEROS
+              Compañía de Reserva de Ingenieros
             </h2>
             <h3>¡El Consejo Superior y la Comisión del Arma de Ingenieros "San Ignacio de Loyola" les da la bienvenida!
             </h3>

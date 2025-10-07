@@ -10,8 +10,6 @@ export default function Header() {
     { href: '#inicio', label: 'Inicio' },
     { href: '#sobre-mi', label: 'Nosotros' },
     { href: '#informacion', label: 'Información' },
-    { href: '#novedades', label: 'Novedades' },
-    { href: '#eventos', label: 'Eventos' },
     { href: '#contacto', label: 'Contacto' },
   ]
 

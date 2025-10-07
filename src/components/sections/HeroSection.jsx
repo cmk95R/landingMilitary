@@ -36,7 +36,7 @@ export default function HeroSection() {
               alt="Logo de la Comisión de Ingenieros"
             />
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-white/80 text-balance">
-            Transformando ideas en realidad desde 2010
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, libero facere evenietobcaecati earum quo impedit nobis.
           </p>
           <button
             className="

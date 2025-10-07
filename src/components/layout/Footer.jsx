@@ -17,25 +17,15 @@ export default function Footer() {
             hover:ring-white/20 hover:shadow-[0_0_28px_rgba(255,255,255,0.14)]
           "
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
-           
+          {/* Contenido alineado a la derecha */}
+          <div className="flex flex-col sm:flex-row sm:justify-end gap-8 mb-6 sm:mb-8">
+            
 
-            <div>
-              <h5 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">
-                Contacto
-              </h5>
-              <ul className="space-y-2 text-sm sm:text-base text-white/70">
-                <li>+54 11 1234-5678</li>
-                <li>info@miorganizacion.com</li>
-                <li>Buenos Aires, Argentina</li>
-              </ul>
-            </div>
-
-            <div>
+            <div className="text-right">
               <h5 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">
                 Síguenos
               </h5>
-              <div className="flex space-x-4 mb-4 sm:mb-6">
+              <div className="flex justify-end space-x-4 mb-4 sm:mb-6">
                 <a
                   href="#"
                   aria-label="Facebook"
@@ -43,7 +33,7 @@ export default function Footer() {
                 >
                   <Facebook className="w-5 h-5 sm:w-6 sm:h-6 text-white/80 hover:text-yellow-300" />
                 </a>
-                
+              
                 <a
                   href="#"
                   aria-label="Instagram"
@@ -51,13 +41,23 @@ export default function Footer() {
                 >
                   <Instagram className="w-5 h-5 sm:w-6 sm:h-6 text-white/80 hover:text-yellow-300" />
                 </a>
-                
+              
               </div>
+            </div>
+            <div className="text-right">
+              <h5 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">
+                Contacto
+              </h5>
+              <ul className="space-y-2 text-sm sm:text-base text-white/70">
+                <li>+54 11 1234-5678</li>
+                <li>info@compañíaingenieros.com.ar</li>
+                <li>Buenos Aires, Argentina</li>
+              </ul>
             </div>
           </div>
 
           <div className="border-t border-white/10 pt-6 sm:pt-8 text-center text-sm sm:text-base text-white/60">
-            <p>&copy; {currentYear} Mi Organización. Todos los derechos reservados.</p>
+            <p>&copy; {currentYear} Compañía de Reserva de Ingenieros. Todos los derechos reservados.</p>
           </div>
         </div>
       </div>
