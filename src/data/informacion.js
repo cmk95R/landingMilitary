@@ -1,7 +1,7 @@
 const sitiosDeInteres = [
   {
     nombre: "Ejército Argentino",
-    url: "http://www.somosea.mil.ar",
+    url: "https://www.argentina.gob.ar/defensa/ejercito",
     logo: "https://comisioningenieros.mil.ar/wp-content/uploads/2022/08/Escudo_del_Ejercito_Argentino-2-150x150.png",
   },
   {
@@ -21,7 +21,7 @@ const sitiosDeInteres = [
   },
   {
     nombre: "Fundación Soldados",
-    url: "http://www.fundasol.com.ar/",
+    url: "http://fundacionsoldados.com.ar/index.html",
     logo: "https://comisioningenieros.mil.ar/wp-content/uploads/2022/08/Fundacion-soldados.png",
   },
   {
