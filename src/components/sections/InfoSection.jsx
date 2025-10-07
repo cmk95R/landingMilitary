@@ -23,7 +23,7 @@ export default function InfoSection() {
                 src={sitio.logo}
                 alt={`Logo de ${sitio.nombre}`}
                 loading="lazy"
-                className={`object-contain select-none transition-transform duration-300 group-hover:scale-105
+                className={`object-contain select-none transition-transform duration-300 group-hover:scale-185
                     ${sitio.smaller
                     ? 'w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24'
                     : 'w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28'}
