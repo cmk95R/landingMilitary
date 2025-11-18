@@ -1,44 +1,26 @@
 'use client'
 
 import { X } from 'lucide-react'
-import { useEffect } from 'react'
 
-export default function Modal({ isOpen, onClose, title, children }) {
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = 'unset'
-    }
-    return () => {
-      document.body.style.overflow = 'unset'
-    }
-  }, [isOpen])
-
+export default function Modal({ isOpen, onClose, children }) {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
-      {/* Overlay */}
-      <div 
-        className="absolute inset-0 bg-black bg-opacity-50"
-        onClick={onClose}
-      ></div>
-      
-      {/* Modal */}
-      <div className="relative bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto">
-        <div className="flex items-center justify-between p-6 border-b">
-          <h3 className="text-2xl font-bold text-gray-800">{title}</h3>
-          <button
-            onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 transition"
-          >
-            <X size={24} />
-          </button>
-        </div>
-        <div className="p-6">
-          {children}
-        </div>
+    <div
+      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex justify-center items-center p-4"
+      onClick={onClose}
+    >
+      <div
+        className="relative bg-[#1e1e1e] p-8 rounded-xl shadow-2xl w-full max-w-md border border-white/10"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 text-white/50 hover:text-white transition-colors"
+        >
+          <X size={24} />
+        </button>
+        {children}
       </div>
     </div>
   )

@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row sm:justify-end gap-8 mb-6 sm:mb-8">
             
 
-            <div className="text-right">
+            <div className="text-left">
               <h5 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">
                 Síguenos
               </h5>

@@ -1,6 +1,11 @@
 'use client'
 
+import { useState } from 'react'
+import Modal from '@/components/ui/Modal'
+import SubscriptionForm from '@/components/ui/SubscriptionForm'
+
 export default function HeroSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <section
       id="inicio"
@@ -39,6 +44,7 @@ export default function HeroSection() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, libero facere evenietobcaecati earum quo impedit nobis.
           </p>
           <button
+            onClick={() => setIsModalOpen(true)}
             className="
               inline-flex items-center justify-center
               bg-[#4099a2] text-white font-semibold
@@ -53,6 +59,13 @@ export default function HeroSection() {
           </button>
         </div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        <h3 className="text-2xl font-bold text-white mb-2 text-center">Sumate a la Comisión</h3>
+        <p className="text-xs text-center text-yellow-900 font-semibold bg-yellow-400/90 p-3 rounded-lg mb-6 uppercase">
+          Sujeto a aprobación por la agrupación de ingenieros. El completar el formulario no implica incorporación.
+        </p>
+        <SubscriptionForm />
+      </Modal>
     </section>
   )
 }
