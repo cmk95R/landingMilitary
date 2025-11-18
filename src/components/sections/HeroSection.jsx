@@ -41,7 +41,7 @@ export default function HeroSection() {
               alt="Logo de la Comisión de Ingenieros"
             />
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-white/80 text-balance">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, libero facere evenietobcaecati earum quo impedit nobis.
+            "Servir a la patria es el mayor orgullo del Reservista".
           </p>
           <button
             onClick={() => setIsModalOpen(true)}
@@ -60,7 +60,7 @@ export default function HeroSection() {
         </div>
       </div>
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <h3 className="text-2xl font-bold text-white mb-2 text-center">Sumate a la Comisión</h3>
+        <h3 className="text-2xl font-bold text-white mb-2 text-center">Completa los datos</h3>
         <p className="text-xs text-center text-yellow-900 font-semibold bg-yellow-400/90 p-3 rounded-lg mb-6 uppercase">
           Sujeto a aprobación por la agrupación de ingenieros. El completar el formulario no implica incorporación.
         </p>

@@ -5,11 +5,19 @@ import { useState } from 'react'
 export default function SubscriptionForm() {
   const [formData, setFormData] = useState({
     nombre: '', apellido: '', grado: '', arma: '', dni: '', edad: '', nacionalidad: '', celular: '',
-    estadoCivil: 'Soltero/a', sexo: 'Masculino', email: '', domicilio: '', localidad: '', provincia: '',
+    estadoCivil: 'Soltero/a', sexo: 'Masculino', email: '', domicilio: '', localidad: '', provincia: 'Buenos Aires',
     cp: '', obraSocial: '', hijos: '', peso: '', altura: '', fotoFrente: null, fotoCuerpoEntero: null,
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+
+  const provinces = [
+    'Buenos Aires', 'Catamarca', 'Chaco', 'Chubut', 'Ciudad Autónoma de Buenos Aires',
+    'Córdoba', 'Corrientes', 'Entre Ríos', 'Formosa', 'Jujuy', 'La Pampa', 'La Rioja',
+    'Mendoza', 'Misiones', 'Neuquén', 'Río Negro', 'Salta', 'San Juan', 'San Luis',
+    'Santa Cruz', 'Santa Fe', 'Santiago del Estero',
+    'Tierra del Fuego, Antártida e Islas del Atlántico Sur', 'Tucumán'
+  ];
 
   const handleChange = (e) => {
     const { name, value, files } = e.target
@@ -83,7 +91,7 @@ export default function SubscriptionForm() {
             <select id="sexo" name="sexo" value={formData.sexo} onChange={handleChange} required className="w-full bg-[#2a2a2a] border border-white/10 text-white rounded-md p-3 focus:ring-[#4099a2] focus:border-[#4099a2] transition">
               <option>Masculino</option>
               <option>Femenino</option>
-              <option>Otro</option>
+              
             </select>
           </div>
         </div>
@@ -107,7 +115,11 @@ export default function SubscriptionForm() {
           </div>
           <div>
             <label htmlFor="provincia" className="block text-sm font-medium text-white/80 mb-2">Provincia</label>
-            <input type="text" id="provincia" name="provincia" value={formData.provincia} onChange={handleChange} required className="w-full bg-[#2a2a2a] border border-white/10 text-white rounded-md p-3 focus:ring-[#4099a2] focus:border-[#4099a2] transition" />
+            <select id="provincia" name="provincia" value={formData.provincia} onChange={handleChange} required className="w-full bg-[#2a2a2a] border border-white/10 text-white rounded-md p-3 focus:ring-[#4099a2] focus:border-[#4099a2] transition">
+              {provinces.sort().map(province => (
+                <option key={province} value={province}>{province}</option>
+              ))}
+            </select>
           </div>
           <div>
             <label htmlFor="cp" className="block text-sm font-medium text-white/80 mb-2">Código Postal (CP)</label>
