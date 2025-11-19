@@ -1,0 +1,11 @@
+# Configuración para desplegar una aplicación Next.js en Netlify
+
+[build]
+  # Comando para construir tu sitio. 'npm run build' ejecutará 'next build'.
+  command = "npm run build"
+  # Directorio que Netlify debe publicar. Para Next.js, es '.next'.
+  publish = ".next"
+
+[[plugins]]
+  # Plugin esencial para que Next.js funcione correctamente en Netlify.
+  package = "@netlify/plugin-nextjs"
