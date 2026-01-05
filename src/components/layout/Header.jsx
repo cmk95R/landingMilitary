@@ -29,7 +29,7 @@ export default function Header() {
           <a href="#inicio" className="flex items-center gap-4">
             <img
               className="h-12 w-auto"
-              src="/01.png"
+              src="/logo2fin.png"
               alt="Logo de la Comisión de Ingenieros"
             />
             <h5 className="text-xl sm:text-2xl text-white font-small">

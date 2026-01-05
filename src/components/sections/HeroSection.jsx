@@ -37,7 +37,7 @@ export default function HeroSection() {
 
            <img
               className="h-48 w-auto mx-auto mb-6 sm:mb-8"
-              src="/01.png"
+              src="/logo2fin.png"
               alt="Logo de la Comisión de Ingenieros"
             />
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-white/80 text-balance">
