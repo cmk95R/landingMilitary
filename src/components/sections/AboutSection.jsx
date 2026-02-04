@@ -18,12 +18,30 @@ export default function AboutSection() {
             </h3>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
               Esta Subunidad fue creada durante el año 2025 a peticion de las Autoridades del  Departamento de Reservas del Ejército Argentino
-              La mision de esta Sub Unidad del arma de Ingenieros es la capacitacion, preparacion y alistamiento permanente para asistir en todas aquellas operaciones del arma que determine la Agrupacion de Ingenieros 601
-              El sitio tiene un compendio actualizado de las novedades del Arma de Ingenieros, de esta CA de Reserva, los logros de los integrantes del arma, como asi tambien artículos de interés históricos y de naturaleza técnico-profesional
-
             </p>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-              Trabajamos y nos preparamos para cumplir con el Ejercito Argentino y con la Sociedad.
+              La mision de esta Sub Unidad de Ingenieros es la capacitacion, preparacion y alistamiento permanente para asistir en todas aquellas operaciones del Arma que determine la Agrupacion de Ingenieros 601.
+            </p>
+
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+              El sitio tiene un compendio actualizado de las novedades del Arma de Ingenieros, de esta CA de Reserva, los logros de los integrantes del arma, como asi tambien artículos de interés históricos y de naturaleza técnico-profesional.
+            </p>
+
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+            Queremos expresar nuestra más cordial bienvenida a quienes son destinatarios de este trabajo; a quienes nos acompañan desde el silencio reflexivo o desde la propuesta constructiva; a quienes nos alientan en el esfuerzo diario de abrir caminos, en el afán permanente de ser mejores para el bien de la Patria, del Ejército Argentino y de nuestra querida Arma de Ingenieros.
+      
+            </p>
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+            Trabajamos y nos preparamos para cumplir con el Ejercito Argentino y con la Sociedad. 
+
+            </p>
+
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+            Servir es nuestro más ferviente anhelo!
+            </p>
+
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6 text-right">
+            ¡Bienvenidos!
             </p>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
               
