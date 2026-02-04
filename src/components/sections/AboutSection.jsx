@@ -11,22 +11,42 @@ export default function AboutSection() {
             />
           </div>
           <div className="order-1 lg:order-2">
-
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">¡Bienvenidos!
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 sm:mb-6">
+              Nos llena de orgullo darles la bienvenida a la
             </h2>
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">¡COMPAÑÍA DE RESERVA DE INGENIEROS!
+            </h3>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
               Esta Subunidad fue creada durante el año 2025 a peticion de las Autoridades del  Departamento de Reservas del Ejército Argentino
-              La mision de esta Sub Unidad del arma de Ingenieros es la capacitacion, preparacion y alistamiento permanente para asistir en todas aquellas operaciones del arma que determine la Agrupacion de Ingenieros 601
-              El sitio tiene un compendio actualizado de las novedades del Arma de Ingenieros, de esta CA de Reserva, los logros de los integrantes del arma, como asi tambien artículos de interés históricos y de naturaleza técnico-profesional
-
             </p>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-              Trabajamos y nos preparamos para cumplir con el Ejercito Argentino y con la Sociedad.
+              La mision de esta Sub Unidad de Ingenieros es la capacitacion, preparacion y alistamiento permanente para asistir en todas aquellas operaciones del Arma que determine la Agrupacion de Ingenieros 601.
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 sm:mb-6">
-              Ingenieros “Primero la Mision”
-            </h2>
 
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+              El sitio tiene un compendio actualizado de las novedades del Arma de Ingenieros, de esta CA de Reserva, los logros de los integrantes del arma, como asi tambien artículos de interés históricos y de naturaleza técnico-profesional.
+            </p>
+
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+            Queremos expresar nuestra más cordial bienvenida a quienes son destinatarios de este trabajo; a quienes nos acompañan desde el silencio reflexivo o desde la propuesta constructiva; a quienes nos alientan en el esfuerzo diario de abrir caminos, en el afán permanente de ser mejores para el bien de la Patria, del Ejército Argentino y de nuestra querida Arma de Ingenieros.
+      
+            </p>
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+            Trabajamos y nos preparamos para cumplir con el Ejercito Argentino y con la Sociedad. 
+
+            </p>
+
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+            Servir es nuestro más ferviente anhelo!
+            </p>
+
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6 text-right">
+            ¡Bienvenidos!
+            </p>
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+              
+              “Ingenieros “Primero la Mision”
+            </p>
             {/* <div className="mt-6 sm:mt-8 grid grid-cols-3 gap-4 sm:gap-6">
               <div className="text-center">
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600">15+</div>
