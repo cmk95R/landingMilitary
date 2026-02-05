@@ -49,8 +49,8 @@ export default function Footer() {
                 Contacto
               </h5>
               <ul className="space-y-2 text-sm sm:text-base text-white/70">
-                <li>+54 11 1234-5678</li>
-                <li>info@compañíaingenieros.com.ar</li>
+                
+                <li>cares.agring.601@gmail.com</li>
                 <li>Buenos Aires, Argentina</li>
               </ul>
             </div>

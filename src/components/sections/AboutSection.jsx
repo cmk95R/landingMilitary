@@ -1,22 +1,30 @@
 export default function AboutSection() {
   return (
     <section id="sobre-mi" className="py-12 sm:py-16 md:py-20 bg-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
-          <div className="order-2 lg:order-1">
-            <img
-              src="https://comisioningenieros.mil.ar/wp-content/uploads/2022/08/7.jpg"
-              alt="Sobre nosotros"
-              className="rounded-lg shadow-xl w-full"
-            />
-          </div>
-          <div className="order-1 lg:order-2">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 sm:mb-6">
+
+      <div> 
+      <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 sm:mb-6 text-center">
               Nos llena de orgullo darles la bienvenida a la
             </h2>
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">¡COMPAÑÍA DE RESERVA DE INGENIEROS!
-            </h3>
-            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6 text-center">¡COMPAÑÍA DE RESERVA DE INGENIEROS!
+            </h3> 
+            <br />
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center margin-botton:180px ">
+          <div className="order-2 lg:order-1">
+            <img
+              src="/about.webp"
+              alt="Sobre nosotros"
+              className="rounded-lg shadow-xl w-full "
+            />
+          </div>
+
+
+          
+            
+          <div className="order-1 lg:order-2">
+          <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
               Esta Subunidad fue creada durante el año 2025 a peticion de las Autoridades del  Departamento de Reservas del Ejército Argentino
             </p>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
@@ -32,14 +40,11 @@ export default function AboutSection() {
       
             </p>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-            Trabajamos y nos preparamos para cumplir con el Ejercito Argentino y con la Sociedad. 
+            Trabajamos y nos preparamos para cumplir con el Ejercito Argentino y con la Sociedad. Servir es nuestro más ferviente anhelo!
 
             </p>
 
-            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-            Servir es nuestro más ferviente anhelo!
-            </p>
-
+           
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6 text-right">
             ¡Bienvenidos!
             </p>

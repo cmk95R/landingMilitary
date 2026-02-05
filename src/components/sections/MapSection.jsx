@@ -62,7 +62,7 @@ export default function MapSection() {
                   <h4 className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2">
                     Teléfono
                   </h4>
-                  <p className="text-sm sm:text-base text-white/70">+54 11 0000 0000</p>
+                  <p className="text-sm sm:text-base text-white/70"></p>
                   
                 </div>
               </div>
@@ -75,7 +75,7 @@ export default function MapSection() {
                   </h4>
                   
                   <p className="text-sm sm:text-base text-white/70">
-                    contacto@oooo.com 
+                    cares.agring.601@gmail.com 
                   </p>
                 </div>
               </div>
