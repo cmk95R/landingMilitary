@@ -10,6 +10,7 @@ export default function SubscriptionForm() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [submitError, setSubmitError] = useState(null)
 
   const provinces = [
     'Buenos Aires', 'Catamarca', 'Chaco', 'Chubut', 'Ciudad Autónoma de Buenos Aires',
@@ -27,28 +28,56 @@ export default function SubscriptionForm() {
     }))
   }
 
+  // Función auxiliar para convertir archivos a Base64
+  const fileToBase64 = (file) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader()
+      reader.readAsDataURL(file)
+      reader.onload = () => resolve(reader.result.split(',')[1]) // Obtener solo la parte base64
+      reader.onerror = (error) => reject(error)
+    })
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
-
-    // Usaremos FormData para poder enviar archivos
-    const data = new FormData()
-    for (const key in formData) {
-      data.append(key, formData[key])
-    }
+    setSubmitError(null)
 
     try {
-      const response = await fetch('/api/submit-form', {
-        method: 'POST',
-        body: data, // No se necesita 'Content-Type' header, el navegador lo pone solo con FormData
-      })
+      const payload = { ...formData }
 
-      if (!response.ok) throw new Error('Error al enviar el formulario.')
+      // Convertir fotos a Base64 si existen
+      if (payload.fotoFrente instanceof File) {
+        payload.fotoFrente = {
+          name: payload.fotoFrente.name,
+          type: payload.fotoFrente.type,
+          data: await fileToBase64(payload.fotoFrente),
+        }
+      }
+      if (payload.fotoCuerpoEntero instanceof File) {
+        payload.fotoCuerpoEntero = {
+          name: payload.fotoCuerpoEntero.name,
+          type: payload.fotoCuerpoEntero.type,
+          data: await fileToBase64(payload.fotoCuerpoEntero),
+        }
+      }
+
+      // REEMPLAZA ESTA URL CON LA QUE OBTENGAS DE GOOGLE APPS SCRIPT
+      const GOOGLE_SCRIPT_URL = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL
+
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors', // Necesario para enviar datos a Google sin errores de CORS
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      })
 
       setIsSubmitted(true) // Mostramos el mensaje de éxito
     } catch (error) {
       console.error('Error:', error)
-      alert('Hubo un problema al enviar tu inscripción. Por favor, intenta de nuevo.')
+      setSubmitError('Hubo un problema al enviar tu inscripción. Por favor, verifica tu conexión e intenta de nuevo.')
     } finally {
       setIsSubmitting(false)
     }
@@ -62,6 +91,23 @@ export default function SubscriptionForm() {
           En caso de incorporación será contactado vía mail con los documentos, requisitos y requerimientos a cumplir.
         </p>
         {/* Opcional: un botón para cerrar el modal manualmente */}
+      </div>
+    )
+  }
+
+  if (submitError) {
+    return (
+      <div className="text-center py-8">
+        <h3 className="text-2xl font-bold text-red-500 mb-4">¡Error!</h3>
+        <p className="text-white/80 max-w-sm mx-auto mb-6">
+          {submitError}
+        </p>
+        <button
+          onClick={() => setSubmitError(null)}
+          className="inline-flex items-center justify-center bg-[#4099a2] text-white font-semibold px-6 py-3 rounded-lg ring-1 ring-white/10 shadow-[0_0_12px_rgba(255,255,255,0.06)] transition hover:bg-[#4099a2]/90 hover:ring-white/20"
+        >
+          Reintentar
+        </button>
       </div>
     )
   }

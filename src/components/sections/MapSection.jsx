@@ -75,7 +75,7 @@ export default function MapSection() {
                   </h4>
                   
                   <p className="text-sm sm:text-base text-white/70">
-                    cares.agring.601@gmail.com 
+                    caresagring@gmail.com 
                   </p>
                 </div>
               </div>

@@ -50,7 +50,7 @@ export default function Footer() {
               </h5>
               <ul className="space-y-2 text-sm sm:text-base text-white/70">
                 
-                <li>cares.agring.601@gmail.com</li>
+                <li>caresagring@gmail.com</li>
                 <li>Buenos Aires, Argentina</li>
               </ul>
             </div>
