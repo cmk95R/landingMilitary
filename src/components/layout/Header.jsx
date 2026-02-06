@@ -33,7 +33,7 @@ export default function Header() {
               alt="Logo de la Comisión de Ingenieros"
             />
             <h5 className="text-xl sm:text-2xl text-white font-small">
-              Compañía de Reserva de Ingenieros
+              Compañia de Reserva Agrupacion de Ingenieros
             </h5>
           </a>
           {/* Desktop nav */}

@@ -50,7 +50,7 @@ export default function AboutSection() {
             </p>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
               
-              “Ingenieros “Primero la Mision”
+              Ingenieros “Primero la Mision”
             </p>
             {/* <div className="mt-6 sm:mt-8 grid grid-cols-3 gap-4 sm:gap-6">
               <div className="text-center">
