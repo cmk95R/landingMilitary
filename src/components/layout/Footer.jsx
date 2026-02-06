@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
 
           <div className="border-t border-white/10 pt-6 sm:pt-8 text-center text-sm sm:text-base text-white/60">
-            <p>&copy; {currentYear} Compañía de Reserva de Ingenieros. Todos los derechos reservados.</p>
+            <p>&copy; {currentYear} Compañía de Reserva Agrupacion de Ingenieros. Todos los derechos reservados.</p>
           </div>
         </div>
       </div>

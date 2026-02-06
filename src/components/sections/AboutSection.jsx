@@ -6,7 +6,7 @@ export default function AboutSection() {
       <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 sm:mb-6 text-center">
               Nos llena de orgullo darles la bienvenida a la
             </h2>
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6 text-center">¡COMPAÑÍA DE RESERVA DE INGENIEROS!
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6 text-center">COMPAÑÍA DE RESERVA DE INGENIEROS
             </h3> 
             <br />
       </div>
