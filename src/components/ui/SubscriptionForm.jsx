@@ -22,9 +22,16 @@ export default function SubscriptionForm() {
 
   const handleChange = (e) => {
     const { name, value, files } = e.target
+    
+    let newValue = value
+    // Validar que solo se ingresen números en DNI y Celular
+    if (['dni', 'celular'].includes(name)) {
+      newValue = value.replace(/[^0-9]/g, '')
+    }
+
     setFormData(prev => ({
       ...prev,
-      [name]: files ? files[0] : value
+      [name]: files ? files[0] : newValue
     }))
   }
 
@@ -120,7 +127,17 @@ export default function SubscriptionForm() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {['Nombre', 'Apellido', 'Grado', 'Arma', 'DNI', 'Edad', 'Nacionalidad', 'Celular'].map((field) => (
             <div key={field.toLowerCase()}>
-              <label htmlFor={field.toLowerCase()} className="block text-sm font-medium text-white/80 mb-2">{field}</label>              <input type={['DNI', 'Edad', 'Celular'].includes(field) ? 'number' : 'text'} id={field.toLowerCase()} name={field.toLowerCase()} value={formData[field.toLowerCase()]} onChange={handleChange} required className="w-full bg-[#2a2a2a] border border-white/10 text-white rounded-md p-3 focus:ring-[#4099a2] focus:border-[#4099a2] transition" />
+              <label htmlFor={field.toLowerCase()} className="block text-sm font-medium text-white/80 mb-2">{field}</label>
+              <input
+                type={field === 'Edad' ? 'number' : 'text'}
+                id={field.toLowerCase()}
+                name={field.toLowerCase()}
+                value={formData[field.toLowerCase()]}
+                onChange={handleChange}
+                required
+                inputMode={['DNI', 'Edad', 'Celular'].includes(field) ? 'numeric' : undefined}
+                className={`w-full bg-[#2a2a2a] border border-white/10 text-white rounded-md p-3 focus:ring-[#4099a2] focus:border-[#4099a2] transition ${field === 'Edad' ? '[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none' : ''}`}
+              />
             </div>
           ))}
           <div>
@@ -184,15 +201,15 @@ export default function SubscriptionForm() {
           </div>
           <div>
             <label htmlFor="hijos" className="block text-sm font-medium text-white/80 mb-2">Cantidad de Hijos</label>
-            <input type="number" id="hijos" name="hijos" value={formData.hijos} onChange={handleChange} min="0" required className="w-full bg-[#2a2a2a] border border-white/10 text-white rounded-md p-3 focus:ring-[#4099a2] focus:border-[#4099a2] transition" />
+            <input type="number" id="hijos" name="hijos" value={formData.hijos} onChange={handleChange} min="0" required className="w-full bg-[#2a2a2a] border border-white/10 text-white rounded-md p-3 focus:ring-[#4099a2] focus:border-[#4099a2] transition [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
           </div>
           <div>
             <label htmlFor="peso" className="block text-sm font-medium text-white/80 mb-2">Peso (kg)</label>
-            <input type="number" id="peso" name="peso" value={formData.peso} onChange={handleChange} step="0.1" min="0" required className="w-full bg-[#2a2a2a] border border-white/10 text-white rounded-md p-3 focus:ring-[#4099a2] focus:border-[#4099a2] transition" />
+            <input type="number" id="peso" name="peso" value={formData.peso} onChange={handleChange} step="0.1" min="0" required className="w-full bg-[#2a2a2a] border border-white/10 text-white rounded-md p-3 focus:ring-[#4099a2] focus:border-[#4099a2] transition [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
           </div>
           <div>
             <label htmlFor="altura" className="block text-sm font-medium text-white/80 mb-2">Altura (cm)</label>
-            <input type="number" id="altura" name="altura" value={formData.altura} onChange={handleChange} min="0" required className="w-full bg-[#2a2a2a] border border-white/10 text-white rounded-md p-3 focus:ring-[#4099a2] focus:border-[#4099a2] transition" />
+            <input type="number" id="altura" name="altura" value={formData.altura} onChange={handleChange} min="0" required className="w-full bg-[#2a2a2a] border border-white/10 text-white rounded-md p-3 focus:ring-[#4099a2] focus:border-[#4099a2] transition [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
           </div>
         </div>
       </fieldset>
